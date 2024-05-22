@@ -1,0 +1,75 @@
+
+
+	/*1.class selector*/
+		.demoforclassSelector{
+			width: 500px;
+			height: 700px;
+			background: pink
+		}
+
+		/*2.id selector*/
+
+		#demoIdSelector{
+			width: 750px;
+			height: 500px;
+			background: yellow;
+		}
+
+		/*combination selectors*/
+
+		#section1 .div3{
+
+			width: 250px;
+			height: 250px;
+			background: green;
+
+		}
+
+
+/*element selctor*/
+
+section div{
+	background: grey
+}
+
+
+h2{
+
+	color: white;
+	background: black
+}
+
+/*4.Universal Selector*/
+
+/**{
+	background: yellow;
+}*/
+
+
+.btn{
+	background:green;
+	padding: 1%;
+	color: white;
+	border-radius: 20px;
+	width: auto;
+	height: auto; 
+}
+
+/*psuedo class selectors*/
+
+
+.btn:hover{
+	background: blue;
+	color: black;
+}
+
+.input1:focus{
+	background: green;
+	height: 50px;
+	width: 100px;
+	color: white;
+}
+
+div:first-child{
+	background: brown;
+}
