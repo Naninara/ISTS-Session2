@@ -39,3 +39,11 @@ let AnanymousFun = function () {
 };
 
 AnanymousFun();
+
+setTimeout(function () {
+  console.log("Set Timeout Function");
+}, 60000 * 7);
+
+setInterval(() => {
+  console.log("setInterval Function");
+}, 1000);
