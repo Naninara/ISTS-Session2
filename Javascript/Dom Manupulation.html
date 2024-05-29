@@ -13,21 +13,37 @@
       <li id="listItem">Company</li>
       <li>College</li>
     </ul>
+
+    <ol>
+      <li class="li-class">List 1</li>
+      <li class="li-class">List 2</li>
+      <li class="li-class">List 3</li>
+    </ol>
   </body>
   <script>
-    // 1.select the element
+    // 1 Stage.select the element
 
     //Selectors:- 1.id selector;
     let idSelector = document.getElementById("test");
     console.log(idSelector);
 
-    let li1 = document.getElementById("listItem");
+    // 2.Tag selector
+    let elementSelectedUsingTagSelector =
+      document.getElementsByTagName("li")[2];
+    console.log(elementSelectedUsingTagSelector);
 
-    // 2. Modify the content in that element
+    // 3. class selector
+
+    let elemenstByClass = document.getElementsByClassName("li-class")[2];
+    console.log(elemenstByClass);
+
+    // 2 Stage. Modify the content in that element
 
     // 1.InnerText or innerHtml
     idSelector.innerText = "Modified TExt";
 
-    li1.innerHTML = "<h1>New one</h1>";
+    elementSelectedUsingTagSelector.innerText = "Modified using Tag selector";
+
+    elemenstByClass.innerHTML = "<h1>Modified using class selector</h1>";
   </script>
 </html>
