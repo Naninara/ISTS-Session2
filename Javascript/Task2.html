@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="user-input"></h1>
+    <h1 id="computer-input"></h1>
+    <p id="ans"></p>
+    <button onclick="startGame()">Start</button>
+  </body>
+  <script>
+    let userInput = document.getElementById("user-input");
+    let genNo = document.getElementById("computer-input");
+    let ans = document.getElementById("ans");
+
+    function startGame() {
+      let input = prompt("Enter Number betwwen 1 and 10");
+
+      let randomNo = Math.floor(Math.random() * 10);
+
+      userInput.innerText = "You entered " + input;
+
+      genNo.innerText = "Computer Generated " + randomNo;
+
+      if (input == randomNo) {
+        ans.innerText = "You guessed right";
+      } else {
+        ans.innerText = "You guessed wrong";
+      }
+    }
+  </script>
+</html>
